@@ -8,8 +8,8 @@
 <body>
     <h2>Feedback Received</h2>
 
-    // Connect to MySQL database
     <?php
+    // Connect to MySQL database
     $servername = "localhost";
     $username = "root";
     $password = ""; 
@@ -39,7 +39,7 @@
             echo "<td>" . $row['email'] . "</td>";
             echo "<td>" . $row['feedback'] . "</td>";
             echo "<td>" . $row['rating'] . "</td>";
-            echo "<td>" . $row['submission_date'] . "</td>"; // Display submission date
+            echo "<td>" . $row['submission_date'] . "</td>"; 
             echo "</tr>";
         }
         echo "</table>";
